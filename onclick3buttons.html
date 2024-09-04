@@ -1,0 +1,41 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <style>
+        div
+        {
+            background-color:gray;
+            text-decoration: solid;
+            padding: 5px 15px;
+           text-align: center;
+           color: gold;
+        }
+        div>button
+        {
+            background-color: orange;
+            border: radius 5px; 
+        }
+    </style>
+    <title>Document</title>
+</head>
+<body>
+    <div>
+        <h1 id="displaymessage">Message </h1>
+        <button onclick="change();">Click Hear</button>
+        <button id="hello-btn">Click</button>
+        <button id="bye-btn">Clickk</button>
+    </div>
+    <script>
+        let Displaymsg = document.getElementsById('displaymessage')
+        function change()
+        {
+            
+            Displaymsg.textContent = 'This is dom';
+            Displaymsg.style.color='Blue';
+        }
+        
+
+    </script>
+    
+</body>
+</html>

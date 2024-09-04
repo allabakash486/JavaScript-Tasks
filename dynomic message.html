@@ -1,0 +1,39 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <style>
+        div
+        {
+            background-color:orange;
+            text-decoration: solid;
+            padding: 5px 15px;
+           text-align: center;
+           color: white;
+        }
+        div>button
+        {
+            background-color:blue;
+            border: radius 5px; 
+            box-shadow: 0px 0px 20px blue;
+            border-radius: 20px;
+            color: aqua;
+        }
+    </style>
+    <title>Document</title>
+</head>
+<body>
+    <div class="container">
+        <h1  id="a">Message </h1>
+        <button onclick="change();">Click Hear</button>
+    </div>
+    <script>
+        function change()
+        {
+            let Displaymsg = document.getElementsById('a')
+            Displaymsg.ineerhtml = 'This is dom';
+            Displaymsg.style.color='Blue';
+        }
+    </script>
+    
+</body>
+</html>
